@@ -44,8 +44,16 @@ int main(int argc, char **argv) {
     result = a / b;
   } else if(choice == 5) {
     //TODO: handle this case (minimum)
+    if(a>b)
+    {
+      printf("%d is smaller",a);
+    }
+    else{
+      printf("%d is smaller",b);
+    }
   } else if(choice == 6) {
     //TODO: handle this case (log_a(b))
+    log_a{(b)} = \frac{\ln{(b)}}{\ln{(a)}}
   } else {
     printf("Please input a valid operator next time");
   }
