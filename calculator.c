@@ -15,12 +15,19 @@ int main(int argc, char **argv) {
 
   double a, b, result;
   int choice;
-
+// numbers is in integer type;
+//change in flaot to int;
   printf("Enter operand a: ");
-  scanf("%lf", &a);
+  scanf("%f", &a);
 
   printf("Enter operand b: ");
-  scanf("%lf", &b);
+  scanf("%f", &b);
+// if divisor is zero invalid input
+  if(b==0)
+  {
+   printf("Invalid input input again");
+  }
+ 
 
   printf("Enter operation:\n");
   printf("(1) Addition\n");
@@ -53,7 +60,7 @@ int main(int argc, char **argv) {
     }
   } else if(choice == 6) {
     //TODO: handle this case (log_a(b))
-    log_a{(b)} = \frac{\ln{(b)}}{\ln{(a)}}
+   // ln a{(b)} = frac{ln{(b)}}{ln{(a)}}
   } else {
     printf("Please input a valid operator next time");
   }
