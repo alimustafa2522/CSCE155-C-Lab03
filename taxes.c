@@ -26,9 +26,18 @@ int main(int argc, char **argv) {
   if(c == 'y' || c == 'Y') {
     printf("How many children do you have? ");
     scanf("%d", &numChildren);
-  }
+    double a = numChildren;
 
-  //TODO: compute the tax, child credit, and total tax here
+    childCredit = a*2000;
+                          
+                        }
+     
+   if(agi>0&&agi<19900)
+     {
+
+     }                  
+
+    
 
   printf("AGI:          $%10.2f\n", agi);
   printf("Tax:          $%10.2f\n", tax);
