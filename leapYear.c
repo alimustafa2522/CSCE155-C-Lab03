@@ -120,7 +120,7 @@ int isLeapYear(int year) {
   //      Your function should return true (1) if it represents a leap year
   //      and false (0) if it does not.
 
-    if(year%4==0 && year % 100! == 0 || year % 400 == 0)
+    if(year%4==0 && year % 100!= 0 || year % 400 == 0)
     // a year is devided by 4 but not by hundred or year is devided by 400 is leap year
     {
       printf("%d is a leap year\n",year);
