@@ -52,10 +52,38 @@ int main(int argc, char **argv) {
   else if(agi>=81051 && agi<=172750)
   {
     calculation = (agi - 81050);
-    tax = ((12*calculation)/100) + 9328;
+    tax = ((22*calculation)/100) + 9328;
     totalTax = tax - childCredit;
   }
   // copy if else just change the values ;
+
+   else if(agi>=172751 && agi<=329850)
+  {
+    calculation = (agi - 172750);
+    tax = ((24*calculation)/100) + 29502
+      totalTax = tax - childCredit;
+  }
+
+   else if(agi>=329851 && agi<=418850)
+  {
+    calculation = (agi - 329850);
+    tax = ((32*calculation)/100) + 67206;
+    totalTax = tax - childCredit;
+  }
+
+   else if(agi>=418851 && agi<=628300)
+  {
+    calculation = (agi - 418850);
+    tax = ((35*calculation)/100) + 95686;
+    totalTax = tax - childCredit;
+  }
+   else if(agi>=628301)
+  {
+    calculation = (agi - 628300);
+    tax = ((37*calculation)/100) + 168933.50;
+    totalTax = tax - childCredit;
+  }
+
 
   printf("AGI:          $%10.2f\n", agi);
   printf("Tax:          $%10.2f\n", tax);
